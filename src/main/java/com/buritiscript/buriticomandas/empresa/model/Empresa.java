@@ -25,8 +25,8 @@ public class Empresa {
     @NotBlank
     @NotNull
     private String razaoSocial;
-    private String idContato;
-    private String idEndereco;
+    private Long idContato;
+    private Long idEndereco;
     @NotBlank
     @CNPJ
     private String cnpj;
