@@ -18,8 +18,7 @@ O projeto utiliza o **Spring Boot** na versão **2.7.16** como parent e inclui a
 - **Loombok**: Biblioteca de anotação Java que ajuda a reduzir o código padrão.
 - **Spring Data JPA**: Persiste dados em armazenamentos SQL com Java Persistence API usando Spring Data e Hibernate.
 - **H2 Database**: Fornece um banco de dados rápido na memória que suporta API JDBC e acesso R2DBC, com um espaço ocupado pequeno (2 MB). Suporta modos incorporados e de servidor, bem como um aplicativo de console baseado em navegador.
-- **Loombok**: Biblioteca de anotação Java que ajuda a reduzir o código padrão.
-- **Loombok**: Biblioteca de anotação Java que ajuda a reduzir o código padrão.
+
 
 
 
