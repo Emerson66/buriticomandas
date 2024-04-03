@@ -3,6 +3,8 @@ package com.buritiscript.buriticomandas.empresa.model;
 
 import org.hibernate.validator.constraints.br.CNPJ;
 
+import com.buritiscript.buriticomandas.endereco.model.Endereco;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -26,7 +28,7 @@ public class Empresa {
     @NotNull
     private String razaoSocial;
     private Long idContato;
-    private Long idEndereco;
+    private Endereco endereco;
     @NotBlank
     @CNPJ
     private String cnpj;

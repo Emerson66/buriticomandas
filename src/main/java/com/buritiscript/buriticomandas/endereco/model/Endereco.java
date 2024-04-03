@@ -12,18 +12,18 @@ import lombok.Setter;
 @Getter
 @Setter
 public class Endereco {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY )
-    private Long id;
     @NotBlank
-    private String cidade;
+    private String bairro;
     @NotBlank
-    private String uf;
+    private String logradouro;
     @NotBlank
-    private Long logradouro;
+    private String numero;
     @NotBlank
-    private Long numero;
+    private String complemento;
+    @NotBlank
+    private String cep;
 
+    private Cidade cidade
     @Deprecated
     public Endereco() {
     }
