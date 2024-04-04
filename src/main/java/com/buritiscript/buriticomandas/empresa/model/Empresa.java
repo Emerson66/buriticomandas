@@ -3,6 +3,7 @@ package com.buritiscript.buriticomandas.empresa.model;
 
 import org.hibernate.validator.constraints.br.CNPJ;
 
+import com.buritiscript.buriticomandas.contato.model.Contato;
 import com.buritiscript.buriticomandas.endereco.model.Endereco;
 
 import jakarta.persistence.CascadeType;
@@ -32,7 +33,9 @@ public class Empresa {
     @NotBlank
     @NotNull
     private String razaoSocial;
-    private Long idContato;
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "contato_id", referencedColumnName = "codigo")
+    private Contato contato;
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn( name = "endereco_id", referencedColumnName = "codigo")
     private Endereco endereco;
