@@ -1,4 +1,4 @@
-package com.buritiscript.buriticomandas.endereco.model;
+package com.buritiscript.buriticomandas.cidade.model;
 
 public class Cidade {
 
