@@ -1,4 +1,4 @@
-package com.buritiscript.buriticomandas.cidade.model;
+package com.buritiscript.buriticomandas.estado.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

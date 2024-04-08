@@ -1,5 +1,7 @@
 package com.buritiscript.buriticomandas.cidade.model;
 
+import com.buritiscript.buriticomandas.estado.model.Estado;
+
 import io.micrometer.common.lang.NonNull;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
@@ -22,7 +24,7 @@ import lombok.ToString;
 public class Cidade {
 @ManyToOne(fetch = FetchType.LAZY)
 @JoinColumn(name = "estado_id", nullable = false)
-Estado estado;
+private Estado estado;
 @Id
 @GeneratedValue(strategy = GenerationType.IDENTITY)
 private Long id;
