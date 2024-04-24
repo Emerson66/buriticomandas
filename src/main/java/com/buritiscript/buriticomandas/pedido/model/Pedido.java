@@ -1,8 +1,6 @@
 package com.buritiscript.buriticomandas.pedido.model;
 
 import java.time.LocalDateTime;
-import java.util.Date;
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -21,5 +19,5 @@ public class Pedido {
     private Long codPedido;
     private LocalDateTime dataPedido;
     private boolean pedidoFinalizado = false;
-    
+
 }

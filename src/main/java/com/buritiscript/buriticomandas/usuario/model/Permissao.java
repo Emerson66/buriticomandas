@@ -19,4 +19,5 @@ public class Permissao {
     private String nome;
     @NotBlank
     private String descricao;
+
 }

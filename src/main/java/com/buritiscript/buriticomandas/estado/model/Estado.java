@@ -1,30 +1,32 @@
 package com.buritiscript.buriticomandas.estado.model;
 
+import java.util.Set;
+
+import com.buritiscript.buriticomandas.cidade.model.Cidade;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
-import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotNull;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
-@Entity
 @Getter
 @Setter
 @ToString
+@NoArgsConstructor
+@Entity
 @Table(name = "estado")
 public class Estado {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-    @NotBlank
-    @NotNull
-    private String nome;
-    @NotBlank
-    @NotNull
-    private String sigla;
-
+  @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  private Long id;
+  private String nome;
+  private String sigla;
+  @OneToMany(mappedBy = "estado")
+  private Set<Cidade> cidades;
 }
